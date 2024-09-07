@@ -1,0 +1,179 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #F8F4E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+header {
+    padding: 20px;
+    background-color: #FFD966;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, header h3 {
+    color: #151515;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header h3 {
+    font-size: 1.2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+header input {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: #292929;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+header button {
+    margin: 10px;
+    height: 3.5rem;
+    width: 10rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #FFF2CC;
+    color: #151515;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #F8F4E1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.texto h2 {
+    font-size: 1.5rem;
+    color: #151515;
+}
+
+.texto a {
+    text-decoration: none;
+    color: #30475E;
+}
+
+.texto a:hover {
+    text-decoration: underline;
+}
+
+.foto img {
+    width: 200px;
+    height: auto;
+}
+
+.descricao-meta {
+    color: #292929;
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #E0A75E;
+    color: #3e3e3e;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.copywright {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    header input {
+        width: 25rem;
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    header input {
+        width: 17rem;
+    }
+
+    header button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
